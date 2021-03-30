@@ -31,7 +31,7 @@ html {
   display: flex;
   flex-direction: row;
   list-style: none;
-  align-items: fle;
+  align-items: flex-end;
   padding-right: 10px;
   margin-top: 20px;
   /* justify-content: right; */
@@ -169,6 +169,16 @@ html {
   order: 4;
 }
 
+.rm {
+  text-decoration: none;
+}
+
+.rm:hover {
+  text-decoration: none;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+}
+
 /* ----------------------------- */
 /* ARCHIVE FLEX */
 /* ----------------------------- */
@@ -191,7 +201,33 @@ html {
   align-self: center;
 }
 
-#a1 {
-  display: inline;
-  padding-left: 10%;
+.archive-nav {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  align-items: flex-start;
+  padding-right: 10px;
+  margin-top: 20px;
+  /* justify-content: right; */
+}
+
+.archive-nav li {
+  /* this selects all li elements in .main-nav */
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.archive-nav li a:link,
+.archive-nav li a:visited {
+  /* this selects the a tags inside each .main-nav li element */
+  /* padding: 8px 0; */
+  text-decoration: none;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.archive-nav li a:hover,
+.archive-nav li a:active {
+  border-bottom: 2px solid rgb(0, 12, 122);
 }
