@@ -1,0 +1,30 @@
+Cascading Style Sheets:
+- Selectors let you identy or select HTML elements (IDs, Class, Type)
+
+Specificity in CSS: 
+- The way browser puts different attributes before another. 
+    1. Type selectors (i.e. h1 and pseudo-elements ::before)
+    2. Class selectors (i.e. .example, attribute selectors such as type="radio" and pseudo-classes like :hover)
+    3. ID selectors (i.e. #example)
+- !important will overrule the heirachy. This should be used carefully because you can solve an immediate issue but will create one down the line.
+
+Using the Box Model: 
+- When debugging in the browser, you will see the box-method using dev tools. This will display the box layout for a certain class incl size, padding, border & margin. 
+- If you have two boxes that you want to me the same but with a small difference, you can add a style in-line if you wanted, such as <div class="box" style="border:2px solid red>.
+
+CSS Display Property: 
+- display: inline; no width and height as it it just occupies the space it takes up with its text content
+- display: inline-block; like inline except you can add width and height
+- display: block; takes up the entire line no matter what
+- display: none; nothing is displayed, takes up no width/height from the DOM
+
+Z-Index Display & Positioning:
+- Elements may overlap for a number of reasons; for instance, elements positioned absolutely, or elements with negative values set for their margin property. 
+  In these instances we need a way to determine which element should be displayed on top. Without explicitly using z-index the last element written to the 
+  DOM (the last element you wrote in your code) will appear on top of all the others, and so on up the chain of your elements.
+- To order, you give values. I.e. 3 overlapping boxes may have z-index: 1; z-index: 2; and z-index: 3; respectively. They will display in this order. 
+
+Absolute vs Relative units:
+- Absolute (px, in, mm, cm)
+- Relative (%, em, vw - viewpoint width, vh - viewpoint height)
+    - viewpoint would be based on the browsers rendering space. Each unit is 1/100th of width.

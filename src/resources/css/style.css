@@ -1,0 +1,197 @@
+/* ----------------------------- */
+/* BASIC SETUP */
+/* ----------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-width: 0;
+  min-height: 0;
+  color: rgb(1, 0, 56);
+}
+
+html {
+  /* background-color: rgb(179, 223, 198); */
+  font-family: "Lato", "Arial", sans-serif;
+  /* this is the imported font */
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  background-color: #00e1ff25;
+  background-image: url("../images/contain.jpeg");
+  background-size: contain;
+}
+
+/* ----------------------------- */
+/* NAVIGATION */
+/* ----------------------------- */
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: fle;
+  padding-right: 10px;
+  margin-top: 20px;
+  /* justify-content: right; */
+}
+
+.main-nav li {
+  /* this selects all li elements in .main-nav */
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  /* this selects the a tags inside each .main-nav li element */
+  /* padding: 8px 0; */
+  text-decoration: none;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid rgb(0, 12, 122);
+}
+
+#nav {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: left;
+  width: 100%;
+  grid-area: nav;
+}
+
+/* ----------------------------- */
+/* MAIN GRID & FLEX */
+/* ----------------------------- */
+
+.container {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 24% 24% 24% 24%;
+  grid-template-rows: 5vh 10vh 70vh 10vh;
+  grid-template-areas:
+    "nav nav nav nav"
+    "header header header header"
+    "main main main sidebar"
+    "footer footer footer footer";
+  grid-gap: 5px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: #fff; */
+  /* border: 0.5px groove rgb(94, 2, 2); */
+}
+
+#b1 {
+  order: 1;
+  grid-area: header;
+  /* justify-content: center; */
+}
+
+#b2 {
+  order: 2;
+  grid-area: main;
+  /* justify-content: center;
+  align-items: center; */
+  background-image: url("../images/code2.jpeg");
+  background-size: cover;
+}
+
+#b3 {
+  order: 3;
+  grid-area: sidebar;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/code2.jpeg");
+  background-size: cover;
+}
+
+#b4 {
+  order: 4;
+  grid-area: footer;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------------------- */
+/* FEATURE FLEX */
+/* ----------------------------- */
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0px 0 20px;
+  /* background-color: #fff; */
+  width: 46%;
+  height: 45%;
+  border: 0.5px dashed rgb(94, 2, 2);
+  background-color: rgba(255, 255, 255, 0.94);
+  padding-right: 5px;
+  /* color: #000; */
+  /* align-items: flex-end; */
+}
+
+.feature-header {
+  padding-bottom: 10px;
+}
+
+#f1 {
+  order: 1;
+  padding-right: 5px;
+  margin-top: 2%;
+  margin-right: 2%;
+}
+
+#f2 {
+  order: 2;
+  margin-top: 2%;
+}
+
+#f3 {
+  order: 3;
+  margin-right: 2%;
+}
+
+#f4 {
+  order: 4;
+}
+
+/* ----------------------------- */
+/* ARCHIVE FLEX */
+/* ----------------------------- */
+.archive {
+  display: flex;
+  flex-direction: column;
+  width: 92%;
+  height: 96%;
+  border: 0.5px dashed rgb(94, 2, 2);
+  background-color: rgba(255, 255, 255, 0.96);
+  color: #000;
+  /* align-items: flex-end; */
+  /* font-weight: bold; */
+  /* justify-content: center; */
+}
+
+.archive-head {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  align-self: center;
+}
+
+#a1 {
+  display: inline;
+  padding-left: 10%;
+}

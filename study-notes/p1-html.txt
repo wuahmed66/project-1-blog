@@ -1,0 +1,38 @@
+Goals: 
+1. Understand CSS Grid for effective implementation. 
+2. Complete projects on the course by 1st June.
+3. Spend 1hr per day, at least 3 times per day on Udacity content. 
+4. Get to grips with functions. 
+5. Understand async.
+
+Hypertext Markup Language:  
+- Hypertext implies that it uses the http portion of the internet markup meaning the code I write is annotated with keywords. This allows the browser to read this and display visual for the user. 
+    - HTML = Skeleton(foundation)
+    - CSS = Skin(style)
+    - Javascript = Brain(functionality/behaviour)
+- Block Elements: 
+    - <p>, <ul> followed by <li> which is with bullet points, <ol> followed by <li> which is with numbers, <h1> to <h6>, <articles>, <section>, <blockquote>
+    - Inline elements are meant to differentiate part of a text to give it a particular function or meaning. 
+        - links <a>, <em> emphasized words, <strong> important words.
+- Metadata: 
+    - Information about the page that isn't displayed directly on the web page. 
+- Title: 
+    - This tag is always in the <head> tag which will display on the tab of your browser and in search engines. 
+
+Debugging HTML: 
+- One of the best ways to learn how to code. 
+    -  
+
+The DOM - Document Object Model: 
+- A tree which has different nodes that come off it. Each of these nodes are the tags (Paragraph, link etc), at the end of these nodes are objects. 
+- DOM methods allow programatic access to the tree, then you can change the style, structure or content. 
+- The DOM starts as a single parent item that branches out into child items heirarchically. 
+- The DOM reads all objects in the order they're written (html > head > body > footer)
+
+Typical Webpage: 
+- <header> first element of the page which can include logo/tagline. 
+- <nav> nav bar.
+- <h1> title of the page
+- <article> as the main content of the page. 
+- <footer> last element on the page. 
+
