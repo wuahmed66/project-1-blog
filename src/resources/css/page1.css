@@ -24,6 +24,11 @@ html {
   background-size: contain;
 }
 
+h5 {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
 /* ----------------------------- */
 /* NAVIGATION */
 /* ----------------------------- */
@@ -135,38 +140,15 @@ html {
   flex-direction: column;
   padding: 20px 0px 0 20px;
   /* background-color: #fff; */
-  width: 46%;
-  height: 45%;
+  width: 92%;
+  height: 93%;
   border: 0.5px dashed rgb(94, 2, 2);
   background-color: rgba(255, 255, 255, 0.94);
   padding-right: 5px;
+  align-items: center;
+  margin-top: 20px;
   /* color: #000; */
   /* align-items: flex-end; */
-}
-
-.feature-header {
-  padding-bottom: 10px;
-}
-
-#f1 {
-  order: 1;
-  padding-right: 5px;
-  margin-top: 2%;
-  margin-right: 2%;
-}
-
-#f2 {
-  order: 2;
-  margin-top: 2%;
-}
-
-#f3 {
-  order: 3;
-  margin-right: 2%;
-}
-
-#f4 {
-  order: 4;
 }
 
 .rm {
