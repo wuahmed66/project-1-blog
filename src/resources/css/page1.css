@@ -24,12 +24,12 @@ html {
   background-size: contain;
 }
 h3 {
-  color: rgb(94, 2, 2);
+  color: rgb(0, 70, 0);
 }
 
 h5 {
   padding-top: 15px;
-  color: rgb(94, 2, 2);
+  color: rgb(0, 70, 0);
   padding-bottom: 5px;
 }
 
@@ -175,7 +175,7 @@ h5 {
   flex-direction: column;
   width: 92%;
   height: 96%;
-  border: 0.5px dashed rgb(94, 2, 2);
+  border: 0.5px dashed rgb(0, 70, 0);
   background-color: rgba(255, 255, 255, 0.96);
   color: #000;
   /* align-items: flex-end; */
@@ -188,7 +188,7 @@ h5 {
   width: 200px;
   align-self: center;
   border-radius: 50%;
-  border: rgb(94, 2, 2) 1px solid;
+  border: rgb(0, 70, 0) 1px solid;
 }
 
 .author-info {
@@ -197,7 +197,7 @@ h5 {
 }
 
 .author h4 {
-  color: rgb(94, 2, 2);
+  color: rgb(0, 70, 0);
 }
 
 .author-head {
@@ -213,7 +213,7 @@ h5 {
   align-items: flex-start;
   padding-right: 10px;
   padding-bottom: 30px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   /* justify-content: right; */
 }
 
