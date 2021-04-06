@@ -23,9 +23,13 @@ html {
   background-image: url("../images/contain.jpeg");
   background-size: contain;
 }
+h3 {
+  color: rgb(94, 2, 2);
+}
 
 h5 {
   padding-top: 15px;
+  color: rgb(94, 2, 2);
   padding-bottom: 5px;
 }
 
@@ -164,9 +168,9 @@ h5 {
 }
 
 /* ----------------------------- */
-/* ARCHIVE FLEX */
+/* AUTHOR FLEX */
 /* ----------------------------- */
-.archive {
+.author {
   display: flex;
   flex-direction: column;
   width: 92%;
@@ -179,13 +183,30 @@ h5 {
   /* justify-content: center; */
 }
 
-.archive-head {
+.author img {
+  height: 200px;
+  width: 200px;
+  align-self: center;
+  border-radius: 50%;
+  border: rgb(94, 2, 2) 1px solid;
+}
+
+.author-info {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.author h4 {
+  color: rgb(94, 2, 2);
+}
+
+.author-head {
   padding-top: 20px;
   padding-bottom: 10px;
   align-self: center;
 }
 
-.archive-nav {
+.author-nav {
   display: flex;
   flex-direction: column;
   list-style: none;
@@ -196,14 +217,14 @@ h5 {
   /* justify-content: right; */
 }
 
-.archive-nav li {
+.author-nav li {
   /* this selects all li elements in .main-nav */
   display: inline-block;
   margin-left: 40px;
 }
 
-.archive-nav li a:link,
-.archive-nav li a:visited {
+.author-nav li a:link,
+.author-nav li a:visited {
   /* this selects the a tags inside each .main-nav li element */
   /* padding: 8px 0; */
   text-decoration: none;
@@ -212,7 +233,27 @@ h5 {
   transition: border-bottom 0.2s;
 }
 
-.archive-nav li a:hover,
-.archive-nav li a:active {
+.author-nav li a:hover,
+.author-nav li a:active {
   border-bottom: 2px solid rgb(0, 12, 122);
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  padding-left: 150px;
+}
+
+#fb {
+  color: blue;
+  padding-right: 20px;
+}
+
+#tw {
+  color: lightblue;
+  padding-right: 20px;
+}
+
+#ig {
+  color: purple;
 }

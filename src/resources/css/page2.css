@@ -115,7 +115,7 @@ h5 {
   order: 2;
   grid-area: main;
   /* justify-content: center;
-  align-items: center; */
+      align-items: center; */
   background-image: url("../images/code2.jpeg");
   background-size: cover;
 }
@@ -145,38 +145,15 @@ h5 {
   flex-direction: column;
   padding: 20px 0px 0 20px;
   /* background-color: #fff; */
-  width: 46%;
-  height: 45%;
+  width: 92%;
+  height: 93%;
   border: 0.5px dashed rgb(94, 2, 2);
   background-color: rgba(255, 255, 255, 0.94);
   padding-right: 5px;
+  align-items: center;
+  margin-top: 20px;
   /* color: #000; */
   /* align-items: flex-end; */
-}
-
-.feature-header {
-  padding-bottom: 10px;
-}
-
-#f1 {
-  order: 1;
-  padding-right: 5px;
-  margin-top: 2%;
-  margin-right: 2%;
-}
-
-#f2 {
-  order: 2;
-  margin-top: 2%;
-}
-
-#f3 {
-  order: 3;
-  margin-right: 2%;
-}
-
-#f4 {
-  order: 4;
 }
 
 .rm {
@@ -192,9 +169,9 @@ h5 {
 }
 
 /* ----------------------------- */
-/* ARCHIVE FLEX */
+/* AUTHOR FLEX */
 /* ----------------------------- */
-.archive {
+.author {
   display: flex;
   flex-direction: column;
   width: 92%;
@@ -207,31 +184,48 @@ h5 {
   /* justify-content: center; */
 }
 
-.archive-head {
+.author img {
+  height: 200px;
+  width: 200px;
+  align-self: center;
+  border-radius: 50%;
+  border: rgb(94, 2, 2) 1px solid;
+}
+
+.author-info {
+  padding-top: 10px;
+  padding-left: 20px;
+}
+
+.author h4 {
+  color: rgb(94, 2, 2);
+}
+
+.author-head {
   padding-top: 20px;
   padding-bottom: 10px;
   align-self: center;
 }
 
-.archive-nav {
+.author-nav {
   display: flex;
   flex-direction: column;
   list-style: none;
   align-items: flex-start;
   padding-right: 10px;
   padding-bottom: 30px;
-  margin-top: 20px;
+  /* margin-top: 20px; */
   /* justify-content: right; */
 }
 
-.archive-nav li {
+.author-nav li {
   /* this selects all li elements in .main-nav */
   display: inline-block;
   margin-left: 40px;
 }
 
-.archive-nav li a:link,
-.archive-nav li a:visited {
+.author-nav li a:link,
+.author-nav li a:visited {
   /* this selects the a tags inside each .main-nav li element */
   /* padding: 8px 0; */
   text-decoration: none;
@@ -240,7 +234,27 @@ h5 {
   transition: border-bottom 0.2s;
 }
 
-.archive-nav li a:hover,
-.archive-nav li a:active {
+.author-nav li a:hover,
+.author-nav li a:active {
   border-bottom: 2px solid rgb(0, 12, 122);
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+  padding-left: 130px;
+}
+
+#fb {
+  color: blue;
+  padding-right: 20px;
+}
+
+#tw {
+  color: lightblue;
+  padding-right: 20px;
+}
+
+#ig {
+  color: purple;
 }
