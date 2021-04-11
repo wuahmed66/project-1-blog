@@ -1,0 +1,124 @@
+@media only screen and (max-width: 376px) {
+  .container {
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "nav"
+      "b1"
+      "b2"
+      "b3"
+      "b4";
+  }
+  #nav {
+    grid-area: nav;
+    height: 10vh;
+    align-items: baseline;
+    justify-content: center;
+    font-size: 75%;
+    align-self: center;
+  }
+  #b1 {
+    grid-area: b1;
+    height: 15vh;
+    font-size: 50%;
+  }
+  #b2 {
+    grid-area: b2;
+    height: 80vh;
+    font-size: 60%;
+  }
+
+  #b3 {
+    grid-area: b3;
+    height: 40vh;
+    font-size: 70%;
+    padding-bottom: 2px;
+  }
+
+  #b4 {
+    grid-area: b4;
+    height: 10vh;
+    font-size: 75%;
+  }
+}
+
+@media only screen and (min-width: 377px) and (max-width: 768px) {
+  .container {
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "nav"
+      "b1"
+      "b2"
+      "b3"
+      "b4";
+  }
+  #nav {
+    grid-area: nav;
+    height: 10vh;
+    align-items: baseline;
+    justify-content: center;
+  }
+  #b1 {
+    grid-area: b1;
+    height: 15vh;
+    align-items: baseline;
+  }
+  #b2 {
+    grid-area: b2;
+    height: 80vh;
+    font-size: 100%;
+  }
+  #b3 {
+    grid-area: b3;
+    height: 40vh;
+    font-size: 100%;
+  }
+
+  #b4 {
+    grid-area: b4;
+    height: 10vh;
+  }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .container {
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "nav"
+      "b1"
+      "b2"
+      "b3"
+      "b4";
+  }
+  #nav {
+    grid-area: nav;
+    height: 10vh;
+    align-items: baseline;
+    justify-content: center;
+  }
+  #b1 {
+    grid-area: b1;
+    height: 15vh;
+    align-items: baseline;
+  }
+  #b2 {
+    grid-area: b2;
+    height: 80vh;
+    font-size: 100%;
+  }
+  #b3 {
+    grid-area: b3;
+    height: 40vh;
+    font-size: 100%;
+  }
+
+  #b4 {
+    grid-area: b4;
+    height: 10vh;
+  }
+}
