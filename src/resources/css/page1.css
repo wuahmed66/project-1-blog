@@ -191,6 +191,11 @@ h5 {
   border: rgb(0, 70, 0) 1px solid;
 }
 
+figcaption {
+  font-size: 15px;
+  padding-left: 20px;
+}
+
 .author-info {
   padding-top: 10px;
   padding-left: 20px;
