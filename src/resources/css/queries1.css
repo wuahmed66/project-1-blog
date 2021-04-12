@@ -25,25 +25,44 @@
   }
   #b2 {
     grid-area: b2;
-    height: 80vh;
+    height: 90vh;
     font-size: 60%;
   }
 
   #b3 {
     grid-area: b3;
-    height: 40vh;
+    height: 55vh;
     font-size: 70%;
-    padding-bottom: 2px;
+  }
+
+  .icons {
+    font-size: 20px;
+    position: absolute;
+    left: -100px;
+    top: 1330px;
   }
 
   #b4 {
     grid-area: b4;
-    height: 10vh;
-    font-size: 75%;
+    height: 8vh;
+    font-size: 80%;
+  }
+
+  #fb,
+  #tw,
+  #ig {
+    padding-top: 20px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .author img {
+    height: 100px;
+    width: 100px;
   }
 }
 
-@media only screen and (min-width: 377px) and (max-width: 768px) {
+@media only screen and (min-width: 377px) and (max-width: 769px) {
   .container {
     width: 100vw;
     grid-template-columns: 1fr;
@@ -69,21 +88,27 @@
   #b2 {
     grid-area: b2;
     height: 80vh;
-    font-size: 100%;
+    font-size: 90%;
   }
   #b3 {
     grid-area: b3;
-    height: 40vh;
-    font-size: 100%;
+    height: 50vh;
+    font-size: 75%;
   }
 
   #b4 {
     grid-area: b4;
     height: 10vh;
   }
+
+  #fb,
+  #tw,
+  #ig {
+    padding-top: 20px;
+  }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
+@media only screen and (min-width: 770px) and (max-width: 1024px) {
   .container {
     width: 100vw;
     grid-template-columns: 1fr;

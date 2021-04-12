@@ -25,25 +25,91 @@
   }
   #b2 {
     grid-area: b2;
-    height: 80vh;
+    height: 70vh;
     font-size: 60%;
   }
 
   #b3 {
     grid-area: b3;
-    height: 40vh;
+    height: 55vh;
     font-size: 70%;
-    padding-bottom: 2px;
+  }
+
+  .icons {
+    font-size: 20px;
+    position: absolute;
+    left: -80px;
+    top: 1170px;
+  }
+
+  #b4 {
+    grid-area: b4;
+    height: 8vh;
+    font-size: 80%;
+  }
+
+  #fb,
+  #tw,
+  #ig {
+    padding-top: 20px;
+    display: flex;
+    justify-content: left;
+  }
+
+  .author img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media only screen and (min-width: 377px) and (max-width: 769px) {
+  .container {
+    width: 100vw;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "nav"
+      "b1"
+      "b2"
+      "b3"
+      "b4";
+  }
+  #nav {
+    grid-area: nav;
+    height: 10vh;
+    align-items: baseline;
+    justify-content: center;
+  }
+  #b1 {
+    grid-area: b1;
+    height: 15vh;
+    align-items: baseline;
+  }
+  #b2 {
+    grid-area: b2;
+    height: 70vh;
+    font-size: 90%;
+  }
+  #b3 {
+    grid-area: b3;
+    height: 55vh;
+    font-size: 85%;
   }
 
   #b4 {
     grid-area: b4;
     height: 10vh;
-    font-size: 75%;
+  }
+
+  .icons {
+    position: absolute;
+    left: -65px;
+    top: 1520px;
+    font-size: 20px;
   }
 }
 
-@media only screen and (min-width: 377px) and (max-width: 768px) {
+@media only screen and (min-width: 770px) and (max-width: 1024px) {
   .container {
     width: 100vw;
     grid-template-columns: 1fr;
@@ -74,47 +140,7 @@
   #b3 {
     grid-area: b3;
     height: 40vh;
-    font-size: 100%;
-  }
-
-  #b4 {
-    grid-area: b4;
-    height: 10vh;
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .container {
-    width: 100vw;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 1fr);
-    grid-template-areas:
-      "nav"
-      "b1"
-      "b2"
-      "b3"
-      "b4";
-  }
-  #nav {
-    grid-area: nav;
-    height: 10vh;
-    align-items: baseline;
-    justify-content: center;
-  }
-  #b1 {
-    grid-area: b1;
-    height: 15vh;
-    align-items: baseline;
-  }
-  #b2 {
-    grid-area: b2;
-    height: 80vh;
-    font-size: 100%;
-  }
-  #b3 {
-    grid-area: b3;
-    height: 40vh;
-    font-size: 100%;
+    font-size: 0%;
   }
 
   #b4 {
