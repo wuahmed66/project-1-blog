@@ -1,4 +1,13 @@
 /* ----------------------------- */
+/* CSS IMPORTS */
+/* ----------------------------- */
+@import url("page1.css");
+@import url("page2.css");
+@import url("queries.css");
+@import url("queries1.css");
+@import url("queries2.css");
+
+/* ----------------------------- */
 /* BASIC SETUP */
 /* ----------------------------- */
 
